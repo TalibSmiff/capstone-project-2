@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Parks</title>
-</head>
-<body>
-  <nav>
-    <ul>
-      <li class="logo"><a href="#"><img src="" alt="Logo"></a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="parks.html">Parks</a></li>
-      <li><a href="mountains.html">Mountains</a></li>
-    </ul>
-  </nav>
-  <table>
-    <thead>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Parks</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="logo">
+          <a href="#"><img src="" alt="Logo" /></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="parks.html">Parks</a></li>
+        <li><a href="mountains.html">Mountains</a></li>
+      </ul>
+    </nav>
+    <input type="radio" name="radio" id="typeRadioButton" / >
+    <label for="typeRadioButton">By type</label>
 
-    </thead>
-  </table>
-  <select name="parkTypeList" id="parkTypeList">
-    <option value=""></option>
-  </select>
-  <script src="scripts/nationalParkData.js"></script>
-  <script src="scripts/parkTypeData.js"></script>
-</body>
+    <input type="radio" name="radio" id="stateRadioButton"/ >
+    <label for="stateRadioButton">By State</label>
+
+    <h3>State/Territories</h3>
+
+    <select name="parkTypeList" id="parkTypeList"></select>
+
+    <select name="stateParkList" id="stateParkList"></select>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Zip</th>
+          <th>Phone</th>
+          <th>Website</th>
+        </tr>
+      </thead>
+      <tbody id="parkTableBody">
+        
+      </tbody>
+    </table>
+
+    <script src="scripts/nationalParkData.js"></script>
+    <script src="scripts/parkTypeData.js"></script>
+    <script src="scripts/locationData.js"></script>
+    <script src="scripts/parks.js"></script>
+  </body>
 </html>
