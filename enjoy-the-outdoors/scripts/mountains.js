@@ -22,6 +22,7 @@ function loadMountains() {
 // }
 function mountainDescription() {
   descriptionDiv.innerHTML = "";
+  imageDiv.innerHTML = ""; 
   for (const mountain of mountainsArray) {
     if (mountain.name === mountainSelect.value) {
       let paragraph = document.createElement("p");
