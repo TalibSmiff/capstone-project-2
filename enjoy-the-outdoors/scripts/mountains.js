@@ -26,7 +26,12 @@ function mountainDescription() {
   for (const mountain of mountainsArray) {
     if (mountain.name === mountainSelect.value) {
       let paragraph = document.createElement("p");
-      paragraph.innerText = mountain.desc;
+      paragraph.innerText = `${mountain.desc} 
+       Effort : ${mountain.effort}
+       Elevation : ${mountain.elevation}
+       Coords 
+       latitude : ${mountain.coords.lat} 
+                  longitude : ${mountain.coords.lng}`;
       descriptionDiv.appendChild(paragraph);
       
       let picture = document.createElement("img");
