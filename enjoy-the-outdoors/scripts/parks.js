@@ -42,12 +42,14 @@ function loadParkListingBody(park) {
   let cell6 = row.insertCell(5);
   cell6.innerText = park.Phone;
 
+  let cell7 = row.insertCell(6);
+  
+
   if (park.Visit) {
     let link = document.createElement("a");
     link.href = park.Visit;
     link.innerText = park.Visit;
     link.target = "_blank";
-    let cell7 = row.insertCell(6);
     cell7.appendChild(link);
   }
 }
