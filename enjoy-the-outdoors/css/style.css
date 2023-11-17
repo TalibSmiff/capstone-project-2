@@ -164,3 +164,9 @@ select {
   align-items: center;
   flex-direction: column;
 }
+.logoImage{
+  width:83.59px;
+}
+.textBox{
+  width : 50%;
+}
