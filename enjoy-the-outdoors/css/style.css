@@ -62,7 +62,7 @@ h3,
 p,
 ul,
 li {
-  margin: 10px;
+  /* margin: 10px; */
   padding: 0;
 }
 
@@ -80,7 +80,7 @@ nav {
 nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -91,7 +91,7 @@ nav a {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1280px;
   margin: 20px auto;
   text-align: center;
   background-color: white;
@@ -103,7 +103,7 @@ nav a {
 select {
   padding: 10px;
   margin-top: 10px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 #imageDiv {
@@ -152,6 +152,7 @@ select {
   width: auto;
   height: auto;
   align-items: center;
+  gap: 4rem;
 }
 
 .bodyMain {
@@ -164,10 +165,12 @@ select {
   display: flex;
   align-items: center;
   flex-direction: column;
+  
 }
-.logoImage{
-  width:83.59px;
+.logoImage {
+  width: 83.59px;
 }
-.textBox{
-  width : 50%;
+.textBox {
+  line-height: 2rem;
+  width: 50%;
 }

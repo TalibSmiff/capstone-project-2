@@ -48,7 +48,7 @@ function loadParkListingBody(park) {
   if (park.Visit) {
     let link = document.createElement("a");
     link.href = park.Visit;
-    link.innerText = park.Visit;
+    link.innerText = "Learn More";
     link.target = "_blank";
     cell7.appendChild(link);
   }

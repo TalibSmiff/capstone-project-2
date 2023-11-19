@@ -11,7 +11,10 @@
       <ul>
         <li class="logo">
           <a href="index.html"
-            ><img class="logoImage" src="logoImage/pngtree-banyan-tree-logo-design-vector-png-image_6131481.png" alt="Logo"
+            ><img
+              class="logoImage"
+              src="logoImage/pngtree-banyan-tree-logo-design-vector-png-image_6131481.png"
+              alt="Logo"
           /></a>
         </li>
         <li><a href="index.html">Home</a></li>
@@ -20,34 +23,35 @@
       </ul>
     </nav>
     <br />
-    <input type ="radio" name="radio" id="typeRadioButton" / >
-    <label for="typeRadioButton">By type</label>
+    <main class="container">
+      <input type ="radio" name="radio" id="typeRadioButton" / >
+      <label for="typeRadioButton">By type</label>
 
-    <input type ="radio" name="radio" id="stateRadioButton"/ >
-    <label for="stateRadioButton">By State</label>
-    <br />
-    <br />
-    <h3>State/Territories</h3>
+      <input type ="radio" name="radio" id="stateRadioButton"/ >
+      <label for="stateRadioButton">By State</label>
+      <br />
+      <br />
+      <h3>State/Territories</h3>
 
-    <select name="parkTypeList" id="parkTypeList"></select>
+      <select name="parkTypeList" id="parkTypeList"></select>
 
-    <select name="stateParkList" id="stateParkList"></select>
-    <br />
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Address</th>
-          <th>City</th>
-          <th>State</th>
-          <th>Zip</th>
-          <th>Phone</th>
-          <th>Website</th>
-        </tr>
-      </thead>
-      <tbody id="parkTableBody"></tbody>
-    </table>
-
+      <select name="stateParkList" id="stateParkList"></select>
+      <br />
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Phone</th>
+            <th>Website</th>
+          </tr>
+        </thead>
+        <tbody id="parkTableBody"></tbody>
+      </table>
+    </main>
     <script src="scripts/nationalParkData.js"></script>
     <script src="scripts/parkTypeData.js"></script>
     <script src="scripts/locationData.js"></script>
